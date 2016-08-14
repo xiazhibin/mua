@@ -1,8 +1,0 @@
-flask
-flask-sqlalchemy
-psycopg2
-flask-migrate
-flask-bcrypt
-flask-httpauth
-flask-admin
-flask-login

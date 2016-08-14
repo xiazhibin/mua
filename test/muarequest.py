@@ -1,6 +1,3 @@
-import argparse
-import errno
-import os
 import socket
 
 
@@ -13,10 +10,12 @@ Cookie: id=bin; uuid=123456
 haha
 """
 
+
 def main():
-	sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-	sock.connect(SERVER_ADDRESS)
-	sock.sendall(REQUEST)         
+    sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    sock.connect(SERVER_ADDRESS)
+    sock.sendall(REQUEST)
+
 
 if __name__ == '__main__':
-	main()
+    main()
