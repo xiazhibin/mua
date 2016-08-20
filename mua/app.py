@@ -1,4 +1,4 @@
-from mua.mua import Mua
+from mua import Mua
 
 app = Mua()
 
@@ -8,6 +8,4 @@ def hello():
     return 'hello'
 
 
-if __name__ == "__main__":
-    app.run()
 
