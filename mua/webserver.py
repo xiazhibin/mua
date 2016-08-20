@@ -28,10 +28,10 @@ class WSGIServer(object):
 
     @staticmethod
     def format_time():
-        GMT_Format = "%a,%d %b %Y %H:%M:%S GMT"
-        return datetime.datetime.today().strftime(GMT_Format)
+        gmt_format = "%a,%d %b %Y %H:%M:%S GMT"
+        return datetime.datetime.today().strftime(gmt_format)
 
-    def set_app(self,app):
+    def set_app(self, app):
         self.application = app
 
     def serve_forever(self):
