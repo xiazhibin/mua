@@ -1,4 +1,4 @@
-.DS_Store
-/.idea
-.python-version
-.pyc
+*.DS_Store
+/.idead/*
+*.python-version
+*.py[cod]
