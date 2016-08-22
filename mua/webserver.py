@@ -50,6 +50,8 @@ class WSGIServer(object):
 
     def parse_request(self, text):
         lines = text.splitlines()
+        for line in lines:
+            print line
         if lines is None or len(lines) <= 0:
             return False
         request_line = lines[0]
@@ -75,7 +77,7 @@ class WSGIServer(object):
     def start_response(self, status, response_headers, exc_info=None):
         server_headers = [
             ('Date', WSGIServer.format_time()),
-            ('Server', 'MuaWSGIServer 0.2'),
+            ('Server', 'MuaWSGIServer 0.1'),
         ]
         self.headers_set = [status, response_headers + server_headers]
 
